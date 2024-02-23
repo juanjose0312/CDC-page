@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#nav_content {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(255, 255, 255);
+}
+
+#nav_content-top div{
+    display: inline-block;
+    margin: 10px 60px;
+}
+
+#nav_logo img{
+    margin: 5px 10px;
+    width: 150px;
+}
+
+#nav_logo h1{
+    color: black;
+    font-size: 2rem;
+    margin: 5px 10px;
+}
+
+#nav_links_content ul li{
+    display: inline-block;
+}
+
+#nav_links_content ul li a{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav_decor-top-bar {
+    width: 100%;
+    height: 5%;
+    border: 10px solid rgb(230,187,0);
+
+}
+
+#nav_categories-content {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(255, 255, 255);
+}
+
+#nav_categories {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+#nav_categories li{
+    display: inline-block;
+}
+
+#nav_categories a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_categories-decor {
+    width: 3px;
+    height: 15px;
+    background-color: rgb(90, 90, 90);
+}
+
+#nav_decor-bottom-bar {
+    width: 100%;
+    height: 5%;
+    border: 10px solid rgb(228, 4, 4);
+
+}
+
+footer {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(192, 192, 192);
+    text-align: center;
+    padding: 10px;
+}
