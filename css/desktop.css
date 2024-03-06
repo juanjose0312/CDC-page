@@ -71,11 +71,11 @@ html{
     text-decoration: none;
 }
 
-#nav_top-shopping{
+#nav_top-shopping img{
     width: 10vw;
     height: 10vh;
     margin: 1vh 1vw;
-    background-color: var(--primary-color);
+    
 }
 
 #nav_decor-top-bar{
@@ -83,8 +83,6 @@ html{
     height: 0.5vh;
     background-color: var(--primary-color);
 }
-
-
 
 #nav_decor-right-triangle{
     position: absolute;
