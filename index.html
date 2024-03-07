@@ -6,7 +6,7 @@
     <title>CDC cerrajeria distrubuidora colombia</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tablet.css"  media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/tablet.css"  media="screen and (min-width: 460px)">
     <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,39 +15,62 @@
 <body>
     <header>
     <nav>
-        <div id="nav_top-content">
-            <logo>
-                <img src="source/img/logo-cdc.png" alt="Logo de Cerrajeria Distrubuidora Colombia">
-            </logo>
-            <div id="nav_top-seach">
-                <input type="text" placeholder="Example : llaves">
-                <button>Q</button>
+        <div>
+            <div class="phone" id="nav_top-content-p">
+                <logo>
+                    <img src="source/img/logo-cdc.png" alt="Logo de Cerrajeria Distrubuidora Colombia">
+                </logo>
+                <div id="nav_top-p">
+                    <div id="nav_top-seach-p">
+                        <input type="text" placeholder="Example : llaves">
+                        <button><img src="source/iconos/search.svg"></button>
+                    </div>
+                    <div id="nav_top-link-p">
+                        <img src="source/iconos/chat.svg" alt="Icono de chat">
+                        <div class="nav_top-link-decor"></div>
+                        <img src="source/iconos/shopping_cart-grey.svg" alt="Icono del carrro de compras">
+                        <div class="nav_top-link-decor"></div>
+                        <img src="source/iconos/menu.svg" alt="Icono de menu">
+                    </div>
+                </div>
             </div>
-            <ul id="nav_top-link">
-                <li><a href="">Quienes somos</a></li>
-                <li><a href="">Contactenos</a></li>
-            </ul>
-            <div id="nav_top-shopping">
-                <img src="source/iconos/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="Icono del carrro de compras">
+            <div class="nav_top-content desktop ">
+                <logo>
+                    <img src="source/img/logo-cdc.png" alt="Logo de Cerrajeria Distrubuidora Colombia">
+                </logo>
+                <div id="nav_top-seach">
+                    <input type="text" placeholder="Example : llaves">
+                    <button>Q</button>
+                </div>
+                <ul id="nav_top-link">
+                    <li><a href="">Quienes somos</a></li>
+                    <li><a href="">Contactenos</a></li>
+                </ul>
+                <div id="nav_top-shopping">
+                    <img src="source/iconos/shopping_cart-yellow.svg" alt="Icono del carrro de compras">
+                </div>
             </div>
         </div>
         <div id="nav_decor-top-bar"></div>
         <div id="nav_decor-right-triangle"></div>
-        <ul id="nav_category-content">    
-            <li><a href="">Llaves</a></li>
-            <li><div class="nav_category-decor"></div></li>
-            <li><a href="">Mandos</a></li>
-            <li><div class="nav_category-decor"></div></li>
-            <li><a href="">Controles</a></li>
-            <li><div class="nav_category-decor"></div></li>
-            <li><a href="">Carcasas</a></li>
-            <li><div class="nav_category-decor"></div></li>
-            <li><a href="">Vacio</a></li>
-            <li><div class="nav_category-decor"></div></li>
-            <li><a href="">Chips</a></li>            
+        <div class="desktop">
+        <ul  id="nav_category-content">    
+            <li><a  href="">Llaves</a></li>
+            <li><div class=" nav_category-decor"></div></li>
+            <li><a  href="">Mandos</a></li>
+            <li><div class=" nav_category-decor"></div></li>
+            <li><a  href="">Controles</a></li>
+            <li><div class=" nav_category-decor"></div></li>
+            <li><a  href="">Carcasas</a></li>
+            <li><div class=" nav_category-decor"></div></li>
+            <li><a  href="">Vacio</a></li>
+            <li><div class=" nav_category-decor"></div></li>
+            <li><a  href="">Chips</a></li>            
         </ul>
-        <div id="nav_decor-bottom-bar"></div>
-        <div id="nav_decor-left-triangle"></div>
+        </div>
+        <div class="desktop" id="nav_decor-bottom-bar"></div>
+        <div class="desktop" id="nav_decor-left-triangle"></div>
+        <div class="phone"   id="nav_decor-left-triangle-p"></div>
     </nav>
     </header>
     <main>
@@ -56,48 +79,62 @@
             <h3 id="welcome-text" >"Con nosotros, tus llaves nunca estaran lejos"</h3>
         </div>
         <div id="welcome-image_content">
-            <img id="welcome-image">
+            <img src="source/img/welcome_1.jpeg" id="welcome-image">
         </div>
         <div id="category_content">
             <h2>Categorias</h2>
             <div id="category-decor"></div>
-            <div id="category-list">
-                <div>
-                    <img src="source/img/control.png" alt="imagen de llaves">
-                    <h3>Llaves</h3>
+            <div id="category-grid">
+                <div class="category-card">
+                    <div class="category-card-content">
+                        <img id="category-card-1" src="source/img/vacio_categoria.png" alt="imagen de llaves">
+                    </div>
+                    <div class="category-card-footer">
+                        <h3>Llaves</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="source/img/control.png" alt="imagen de llaves">
-                    <h3>Vacios</h3>
+                <div class="category-card">
+                    <div class="category-card-content">
+                        <img id="category-card-2" src="source/img/vacio_categoria.png" alt="imagen de llaves">
+                    </div>
+                    <div class="category-card-footer">
+                        <h3>Vacios</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="source/img/control.png" alt="imagen de llaves">
-                    <h3>Carcasas</h3>
+                <div class="category-card">
+                    <div class="category-card-content">
+                        <img id="category-card-3" src="source/img/carcasa_categoria.png" alt="imagen de llaves">
+                    </div>
+                    <div class="category-card-footer">
+                        <h3>Carcasas</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="source/img/control.png" alt="imagen de llaves">
-                    <h3>Mandos</h3>     
+                <div class="category-card">
+                    <div class="category-card-content">
+                        <img id="category-card-4" src="source/img/mando_categoria.png" alt="imagen de llaves">
+                    </div>
+                    <div class="category-card-footer">
+                        <h3>Mandos</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="source/img/control.png" alt="imagen de llaves">
-                    <h3>Controles</h3>
+                <div class="category-card">
+                    <div class="category-card-content">
+                        <img id="category-card-5" src="source/img/control_categoria.png" alt="imagen de llaves">
+                    </div>
+                    <div class="category-card-footer">
+                        <h3>Controles</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="source/img/control.png" alt="imagen de llaves">
-                    <h3>Chips</h3>
+                <div class="category-card">
+                    <div class="category-card-content">
+                        <img id="category-card-6" src="source/img/control_categoria.png" alt="imagen de llaves">
+                    </div>
+                    <div class="category-card-footer">
+                        <h3>Chips</h3>
+                    </div>
                 </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore earum, pariatur necessitatibus id a atque? Expedita, provident? Saepe, sapiente quas molestias cumque iure perspiciatis iusto quasi distinctio exercitationem blanditiis?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore earum, pariatur necessitatibus id a atque? Expedita, provident? Saepe, sapiente quas molestias cumque iure perspiciatis iusto quasi distinctio exercitationem blanditiis?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore earum, pariatur necessitatibus id a atque? Expedita, provident? Saepe, sapiente quas molestias cumque iure perspiciatis iusto quasi distinctio exercitationem blanditiis?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore earum, pariatur necessitatibus id a atque? Expedita, provident? Saepe, sapiente quas molestias cumque iure perspiciatis iusto quasi distinctio exercitationem blanditiis?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore earum, pariatur necessitatibus id a atque? Expedita, provident? Saepe, sapiente quas molestias cumque iure perspiciatis iusto quasi distinctio exercitationem blanditiis?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore earum, pariatur necessitatibus id a atque? Expedita, provident? Saepe, sapiente quas molestias cumque iure perspiciatis iusto quasi distinctio exercitationem blanditiis?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore earum, pariatur necessitatibus id a atque? Expedita, provident? Saepe, sapiente quas molestias cumque iure perspiciatis iusto quasi distinctio exercitationem blanditiis?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore earum, pariatur necessitatibus id a atque? Expedita, provident? Saepe, sapiente quas molestias cumque iure perspiciatis iusto quasi distinctio exercitationem blanditiis?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore earum, pariatur necessitatibus id a atque? Expedita, provident? Saepe, sapiente quas molestias cumque iure perspiciatis iusto quasi distinctio exercitationem blanditiis?</p>
-
         <div id="about-us_content">
             <h2  id="about-us_title" >Quienes somos</h2>
             <div id="about-us_decor"></div>

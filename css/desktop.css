@@ -17,16 +17,24 @@ html{
     font-size: 62.5%;
 }
 
-#nav_top-content{
+.phone{
+    display: block;
+}
+.desktop{
+    display: none;
+}
+
+.nav_top-content{
     width: 100vw;
     height: 12vh;
     background-color: var(--white-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 1vh 1vw;
 }
 
-#nav_top-content img{
+.nav_top-content img{
     width: 15vh;
 }
 
@@ -90,7 +98,7 @@ html{
     right: -16.5vw;
     width: 10vw;
     height: 10vh;
-    border-left: 10vw solid transparent;
+    border-left: 10vh solid transparent;
     border-right: 10vw solid transparent;
     border-bottom: 10vh solid var(--primary-color);
 }
@@ -125,7 +133,7 @@ html{
 #nav_decor-bottom-bar{
     width: 100vw;
     height: 1vh;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 #nav_decor-left-triangle{
@@ -137,5 +145,5 @@ html{
     rotate: 180deg;
     border-left: 10vw solid transparent;
     border-right: 10vw solid transparent;
-    border-bottom: 10vh solid var(--primary-color);
+    border-bottom: 10vh solid var(--secondary-color);
 }
