@@ -18,12 +18,13 @@ html{
 }
 
 .phone{
-    display: block;
-}
-.desktop{
     display: none;
 }
+.desktop{
+    display: block;
+}
 
+/*
 .nav_top-content{
     width: 100vw;
     height: 12vh;
@@ -147,3 +148,5 @@ html{
     border-right: 10vw solid transparent;
     border-bottom: 10vh solid var(--secondary-color);
 }
+*/
+
